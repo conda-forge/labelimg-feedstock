@@ -1,5 +1,5 @@
 {% set name = "LabelImg" %}
-{% set version = "1.8.5" %}
+{% set version = "1.8.6" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/labelImg-{{ version }}.tar.gz
-  sha256: 3015d42742993309ab97c41537a7b8c791a17aa13b0e2b957560dfba0f80d53e
+  sha256: dd72a80084fa9264b4ebf9734734ea6259ed603172adc468933d20052fea8430
 
 build:
   number: 0
@@ -17,7 +17,7 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
   script_env:
     - QT_QPA_PLATFORM=offscreen
-  skip: True  # [python_impl == 'pypy']
+  skip: true  # [python_impl == 'pypy']
 
 requirements:
   host:
