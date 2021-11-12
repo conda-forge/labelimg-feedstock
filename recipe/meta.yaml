@@ -11,7 +11,7 @@ source:
   sha256: dd72a80084fa9264b4ebf9734734ea6259ed603172adc468933d20052fea8430
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - labelImg=labelImg.labelImg:main
   script: {{ PYTHON }} -m pip install . -vv
