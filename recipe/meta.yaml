@@ -25,11 +25,11 @@ requirements:
   host:
     - pip
     - py2app  # [osx]
-    - python
+    - python >=3
   run:
     - lxml
     - pyqt
-    - python
+    - python >=3
     - __unix
     - __linux  # [linux]
     - __osx  # [osx]
